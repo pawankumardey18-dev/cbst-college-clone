@@ -47,29 +47,39 @@ The original CBST website (http://cbst.in/) is functional but has several limita
 
 In summary, while the original site is a basic informational portal, this clone elevates it to a modern, robust web application that can be deployed anywhere without external dependencies.
 
+## Live Demo
+
+- Hosted on Vercel: https://cbst-college-clone.vercel.app/
+
 ## How to Run
 
 1. **Prerequisites**: Ensure you have Python 3 installed (comes pre-installed in most environments).
 2. **Start the Server**:
    ```bash
-   cd /workspaces/codespaces-blank
    python3 -m http.server 8000
    ```
-3. **Open in Browser**: Navigate to `http://localhost:8000/Cbst%20Website%20Clone.html`.
-4. **Alternative**: Open the `Cbst Website Clone.html` file directly in any modern web browser for offline viewing.
+3. **Open in Browser**: Navigate to `http://localhost:8000/index.html`
+4. **Alternative**: Open the `index.html` file directly in any modern web browser for offline viewing.
 
 ## Project Structure
 
 ```
-workspaces/codespaces-blank/
-├── Cbst Website Clone.html    # Main website file (self-contained)
-├── public/                    # Local images (campus, faculty, etc.)
+/workspaces/cbst-college-clone/
+├── index.html
+├── README.md
+├── vercel.json
+├── public/
 │   ├── CBST.png
-│   ├── img1.jpg to img10.jpg
+│   ├── CSA.jpg
+│   ├── FMU_InternshipWithDe.jpg
+│   ├── FMU_Internship_Certi.jpg
+│   ├── Slider1.jpg
+│   ├── img1.jpg
 │   └── ...
-├── picture/                   # Faculty profile images
-│   ├── pic_*.png/jpeg
-└── README.md                  # This file
+└── picture/
+    ├── pic_67fa44fb49fb4.png
+    ├── pic_67fa3402ea91a.jpeg
+    └── pic_67fa342912d4f.jpeg
 ```
 
 ## Technologies Used
