@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="College of Basic Science & Technology (CBST), Gopalgaon, Balasore - A premier institution offering BCA and B.Sc. programs affiliated to Fakir Mohan University, approved by AICTE.">
+    <meta name="keywords" content="CBST Balasore, College of Basic Science and Technology, BCA Balasore, BSc Balasore, FM University affiliated college, AICTE approved college Odisha">
+    <meta property="og:title" content="CBST - College of Basic Science & Technology, Balasore">
+    <meta property="og:description" content="Premier Science & Technology institution in Balasore, Odisha | BCA | B.Sc. | Affiliated to FM University">
+    <meta property="og:image" content="http://cbst.in/public/CBST.png">
+    <meta property="og:url" content="https://cbst.in">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>CBST Balasore | College of Basic Science & Technology | BCA | B.Sc.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+        :root {
+            --primary: #0891B2;
+            --primary-light: #06B6D4;
+            --primary-dark: #0E7490;
+            --primary-gradient: linear-gradient(135deg, #0891B2, #06B6D4);
+            --accent: #F59E0B;
+            --accent-light: #FBBF24;
+            --accent-gradient: linear-gradient(135deg, #F59E0B, #FBBF24);
+            --success: #10B981;
+            --surface: #FFFFFF;
+            --surface-alt: #F8FAFC;
+            --surface-elevated: #F1F5F9;
+            --surface-hover: #E2E8F0;
+            --text-primary: #0F172A;
+            --text-secondary: #475569;
+            --text-muted: #94A3B8;
+            --border: #E2E8F0;
+            --border-light: #F1F5F9;
+            --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 24px rgba(0,0,0,0.08);
+            --shadow-lg: 0 20px 50px rgba(0,0,0,0.12);
+            --shadow-xl: 0 25px 60px rgba(0,0,0,0.16);
+            --shadow-glow: 0 0 40px rgba(8,145,178,0.15);
+            --shadow-glow-accent: 0 0 40px rgba(245,158,11,0.2);
+            --radius-xs: 0.375rem;
+            --radius-sm: 0.5rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-2xl: 2rem;
+            --radius-full: 9999px;
+            --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-display: 'Belanosima', sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-accent: 'Playfair Display', serif;
+            --header-height: 0px;
+        }
+        [data-theme="dark"] {
+            --primary: #22D3EE;
+            --primary-light: #67E8F9;
+            --primary-dark: #0891B2;
+            --primary-gradient: linear-gradient(135deg, #22D3EE, #0891B2);
+            --accent: #FBBF24;
+            --accent-light: #FDE68A;
+            --accent-gradient: linear-gradient(135deg, #FBBF24, #F59E0B);
+            --surface: #0F172A;
+            --surface-alt: #1E293B;
+            --surface-elevated: #334155;
+            --surface-hover: #475569;
+            --text-primary: #F1F5F9;
+            --text-secondary: #CBD5E1;
+            --text-muted: #64748B;
+            --border: #334155;
+            --border-light: #1E293B;
+            --shadow-xs: 0 1px 2px rgba(0,0,0,0.3);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+            --shadow-md: 0 4px 24px rgba(0,0,0,0.5);
+            --shadow-lg: 0 20px 50px rgba(0,0,0,0.6);
+            --shadow-xl: 0 25px 60px rgba(0,0,0,0.7);
+            --shadow-glow: 0 0 40px rgba(34,211,238,0.2);
+            --shadow-glow-accent: 0 0 40px rgba(251,191,36,0.25);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: var(--font-body);
+            background: var(--surface);
+            color: var(--text-primary);
+            line-height: 1.7;
+            transition: background var(--transition), color var(--transition);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--surface-alt); }
+        ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: var(--radius-full); }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(8,145,178,0.2); } 50% { box-shadow: 0 0 40px rgba(8,145,178,0.4); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        @keyframes borderGlow { 0%, 100% { border-color: var(--primary); } 50% { border-color: var(--accent); } }
+        .animate-fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.4,0,0.2,1) forwards; opacity: 0; }
+        .animate-fade-in-left { animation: fadeInLeft 0.8s cubic-bezier(0.4,0,0.2,1) forwards; opacity: 0; }
+        .animate-fade-in-right { animation: fadeInRight 0.8s cubic-bezier(0.4,0,0.2,1) forwards; opacity: 0; }
+        .animate-scale-in { animation: scaleIn 0.5s cubic-bezier(0.4,0,0.2,1) forwards; opacity: 0; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+
+        /* ===== SKIP LINK ===== */
+        .skip-link { position: absolute; top: -100px; left: 1rem; background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: var(--radius-sm); z-index: 10000; transition: top 0.3s; }
+        .skip-link:focus { top: 1rem; }
+
+        /* ===== STICKY HEADER GROUP (FIX) ===== */
+        .sticky-header-group {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            background: var(--surface);
+        }
+
+        /* ===== TOP RIBBON ===== */
+        .top-ribbon {
+            background: linear-gradient(135deg, #0F172A, #1E293B);
+            color: #CBD5E1;
+            padding: 0.45rem 2rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 2rem;
+            font-size: 0.78rem;
+            font-weight: 500;
+            flex-wrap: wrap;
+        }
+        .top-ribbon a { color: #CBD5E1; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: color var(--transition-fast); }
+        .top-ribbon a:hover { color: var(--accent-light); }
+
+        /* ===== MAIN HEADER ===== */
+        .main-header {
+            background: var(--surface);
+            padding: 0.85rem 2rem;
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        [data-theme="dark"] .main-header { background: rgba(15,23,42,0.98); }
+        .header-content { max-width: 1350px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+        .logo-section { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+        .logo-img {
+            width: 62px; height: 62px; border-radius: 50%; object-fit: contain;
+            border: 3px solid var(--primary); box-shadow: var(--shadow-glow);
+            animation: pulse-glow 3s infinite; background: white;
+        }
+        .college-title h1 { font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.3px; line-height: 1.2; }
+        .college-title .subtitle { font-size: 0.78rem; color: var(--text-secondary); font-weight: 500; }
+        .affiliation-badges { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+        .badge { padding: 0.28rem 0.75rem; border-radius: var(--radius-full); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.4px; white-space: nowrap; }
+        .badge-aicte { background: #E0F2FE; color: #0E7490; }
+        .badge-govt { background: #FEF3C7; color: #92400E; }
+        .badge-fm { background: #EDE9FE; color: #6D28D9; }
+        [data-theme="dark"] .badge-aicte { background: #164E63; color: #67E8F9; }
+        [data-theme="dark"] .badge-govt { background: #78350F; color: #FDE68A; }
+        [data-theme="dark"] .badge-fm { background: #4C1D95; color: #C4B5FD; }
+
+        /* ===== NAVIGATION ===== */
+        .main-nav { background: var(--surface-alt); border-bottom: 2px solid var(--primary); }
+        [data-theme="dark"] .main-nav { background: #1E293B; }
+        .nav-container { max-width: 1350px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; gap: 1rem; }
+        .nav-links { display: flex; list-style: none; gap: 0; align-items: center; }
+        .nav-item { position: relative; white-space: nowrap; }
+        .nav-link {
+            display: flex; align-items: center; gap: 0.3rem; padding: 0.8rem 0.95rem;
+            color: var(--text-primary); font-weight: 500; font-size: 0.83rem;
+            cursor: pointer; transition: all var(--transition-fast); border-radius: var(--radius-sm);
+            text-decoration: none; white-space: nowrap;
+        }
+        .nav-link:hover { background: var(--primary); color: white; }
+        .nav-link i.caret { font-size: 0.6rem; transition: transform var(--transition-fast); }
+        .nav-item:hover .nav-link i.caret { transform: rotate(180deg); }
+        .dropdown {
+            position: absolute; top: 100%; left: 0; background: var(--surface);
+            min-width: 260px; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);
+            opacity: 0; visibility: hidden; transform: translateY(12px);
+            transition: all var(--transition); z-index: 50; border: 1px solid var(--border); overflow: hidden;
+        }
+        .nav-item:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown a {
+            display: block; padding: 0.7rem 1.1rem; color: var(--text-primary);
+            font-size: 0.83rem; font-weight: 400; text-decoration: none;
+            transition: all var(--transition-fast); border-left: 3px solid transparent;
+        }
+        .dropdown a:hover { background: var(--surface-alt); border-left-color: var(--primary); color: var(--primary); padding-left: 1.5rem; }
+        .nav-actions { display: flex; gap: 0.5rem; align-items: center; }
+        .nav-btn {
+            background: var(--surface-elevated); border: 1px solid var(--border); color: var(--text-primary);
+            padding: 0.42rem 0.75rem; border-radius: var(--radius-md); cursor: pointer; font-size: 0.78rem;
+            font-weight: 500; transition: all var(--transition-fast); display: flex; align-items: center;
+            gap: 0.35rem; white-space: nowrap; font-family: var(--font-body); text-decoration: none;
+        }
+        .nav-btn:hover { background: var(--primary); color: white; border-color: var(--primary); transform: translateY(-1px); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; padding: 0.5rem; }
+
+        /* ===== CSS TICKER (replaces deprecated marquee) ===== */
+        .notice-bar {
+            background: var(--primary-gradient); padding: 0.5rem 0; overflow: hidden;
+            border-bottom: 1px solid rgba(255,255,255,0.2); position: relative;
+        }
+        .notice-bar::before {
+            content: '📢 LATEST'; position: absolute; left: 0; top: 0; bottom: 0;
+            background: rgba(0,0,0,0.25); color: white; font-weight: 700; font-size: 0.72rem;
+            padding: 0 1rem; display: flex; align-items: center; z-index: 2; letter-spacing: 1px;
+            white-space: nowrap;
+        }
+        .ticker-wrapper { overflow: hidden; padding-left: 120px; }
+        .ticker-track {
+            display: flex; white-space: nowrap;
+            animation: tickerScroll 30s linear infinite;
+        }
+        .ticker-track:hover { animation-play-state: paused; }
+        .ticker-track a {
+            color: white; font-weight: 600; font-size: 0.83rem; text-decoration: none;
+            padding: 0 2.5rem; transition: all var(--transition-fast); display: inline-flex; align-items: center; gap: 0.5rem;
+        }
+        .ticker-track a:hover { text-decoration: underline; text-underline-offset: 4px; }
+        .new-badge {
+            background: var(--accent); color: #000; padding: 1px 7px; border-radius: var(--radius-full);
+            font-size: 0.62rem; font-weight: 700; letter-spacing: 0.5px; animation: float 2s infinite; display: inline-block;
+        }
+
+        /* ===== HERO SLIDER ===== */
+        .hero-wrapper { max-width: 1300px; margin: 2rem auto; border-radius: var(--radius-2xl); overflow: hidden; box-shadow: var(--shadow-lg); position: relative; }
+        .swiper { width: 100%; height: 480px; }
+        .swiper-slide { position: relative; }
+        .swiper-slide img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .swiper-slide:hover img { transform: scale(1.03); }
+        .slide-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0; padding: 3rem 2.5rem 2rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.78)); color: white; pointer-events: none;
+        }
+        .slide-overlay h2 { font-family: var(--font-display); font-size: 1.9rem; margin-bottom: 0.3rem; }
+        .slide-overlay p { font-size: 0.95rem; opacity: 0.9; }
+        .swiper-pagination-bullet { background: white !important; opacity: 0.7 !important; }
+        .swiper-pagination-bullet-active { background: var(--accent) !important; opacity: 1 !important; }
+        .swiper-button-prev, .swiper-button-next { color: white !important; }
+
+        /* ===== CONTAINER ===== */
+        .container { max-width: 1350px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* ===== SECTION HEADER ===== */
+        .section-header { text-align: center; margin: 3.5rem 0 2.5rem; }
+        .section-header .icon-badge {
+            display: inline-block; padding: 0.45rem 1.1rem; background: var(--surface-alt);
+            border-radius: var(--radius-full); font-size: 0.83rem; font-weight: 600;
+            color: var(--primary); margin-bottom: 0.8rem; border: 1px solid var(--border);
+        }
+        .section-header h2 {
+            font-family: var(--font-display); font-size: 2.1rem; color: var(--text-primary);
+            position: relative; display: inline-block;
+        }
+        .section-header h2::after {
+            content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+            width: 65px; height: 4px; background: var(--primary-gradient); border-radius: 2px;
+        }
+        .section-header p { color: var(--text-secondary); margin-top: 1.2rem; font-size: 0.93rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        /* ===== CARDS GRID ===== */
+        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 1.8rem; margin: 2rem 0; }
+        .info-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden; transition: all var(--transition); box-shadow: var(--shadow-xs); display: flex; flex-direction: column; }
+        .info-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+        .info-card-header { background: var(--primary-gradient); padding: 0.95rem 1.3rem; color: white; display: flex; align-items: center; gap: 0.7rem; font-weight: 700; font-size: 0.97rem; }
+        .info-card-body { padding: 1.2rem; flex: 1; max-height: 400px; overflow-y: auto; }
+        .info-card-body ul { list-style: none; }
+        .info-card-body li { padding: 0.6rem 0; border-bottom: 1px solid var(--border-light); transition: all var(--transition-fast); cursor: pointer; }
+        .info-card-body li:hover { padding-left: 0.6rem; color: var(--primary); }
+        .info-card-body a { color: var(--text-primary); text-decoration: none; font-size: 0.87rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; transition: color var(--transition-fast); }
+        .info-card-body a:hover { color: var(--primary); }
+        .info-card-footer { padding: 0.9rem 1.2rem; text-align: center; border-top: 1px solid var(--border); }
+
+        /* ===== BUTTONS ===== */
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 2rem; border-radius: var(--radius-full); font-weight: 600; font-size: 0.87rem; cursor: pointer; transition: all var(--transition); border: none; text-decoration: none; font-family: var(--font-body); white-space: nowrap; }
+        .btn-primary { background: var(--primary-gradient); color: white; box-shadow: var(--shadow-sm); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
+        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+        .btn-outline:hover { background: var(--primary); color: white; }
+        .btn-accent { background: var(--accent-gradient); color: #000; }
+        .btn-accent:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow-accent); }
+        .btn-sm { padding: 0.38rem 1.1rem; font-size: 0.78rem; }
+
+        /* ===== STATS BAR ===== */
+        .stats-bar {
+            background: var(--primary-gradient); margin: 2rem 0; padding: 2rem;
+            border-radius: var(--radius-2xl); display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center;
+        }
+        .stat-item { color: white; }
+        .stat-number { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; line-height: 1; }
+        .stat-label { font-size: 0.82rem; opacity: 0.9; margin-top: 0.3rem; }
+
+        /* ===== PRINCIPAL SECTION ===== */
+        .principal-card {
+            background: var(--surface); border-radius: var(--radius-2xl); box-shadow: var(--shadow-md);
+            padding: 2.5rem; margin: 2rem 0; display: flex; gap: 2.5rem;
+            align-items: flex-start; flex-wrap: wrap; border: 1px solid var(--border); transition: all var(--transition);
+        }
+        .principal-card:hover { box-shadow: var(--shadow-xl); }
+        .principal-photo-wrapper { flex: 0 0 auto; text-align: center; }
+        .principal-img {
+            width: 175px; height: 175px; border-radius: 50%; object-fit: cover;
+            border: 4px solid var(--primary); box-shadow: var(--shadow-glow);
+            animation: float 6s infinite; background: var(--surface-alt);
+        }
+        .principal-badge { display: inline-block; margin-top: 0.8rem; padding: 0.3rem 1rem; background: var(--primary-gradient); color: white; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600; }
+        .principal-info h3 { font-family: var(--font-display); font-size: 1.45rem; color: var(--primary); }
+        .principal-info .qualifications { color: var(--text-secondary); font-size: 0.88rem; margin: 0.3rem 0; }
+        .principal-message {
+            flex: 1 1 100%; background: var(--surface-alt); padding: 2rem; border-radius: var(--radius-xl);
+            margin-top: 1.5rem; border-left: 5px solid var(--primary); font-style: italic;
+            position: relative; font-size: 0.93rem; line-height: 1.85;
+        }
+        .principal-message::before {
+            content: '"'; font-size: 6rem; color: var(--primary); opacity: 0.12;
+            position: absolute; top: -20px; left: 15px; font-family: var(--font-accent);
+        }
+
+        /* ===== VISION MISSION ===== */
+        .vision-mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem; margin: 2rem 0; }
+        .vm-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 2rem; transition: all var(--transition); }
+        .vm-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+        .vm-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .vm-card h3 { font-family: var(--font-display); color: var(--primary); margin-bottom: 0.8rem; font-size: 1.3rem; }
+        .vm-card ul { list-style: none; }
+        .vm-card ul li { padding: 0.4rem 0; font-size: 0.88rem; color: var(--text-secondary); display: flex; align-items: flex-start; gap: 0.5rem; }
+        .vm-card ul li::before { content: '→'; color: var(--primary); font-weight: 700; flex-shrink: 0; }
+
+        /* ===== FACULTY GRID ===== */
+        .department-section { margin-bottom: 2.5rem; }
+        .department-title {
+            font-family: var(--font-display); font-size: 1.35rem; color: var(--primary);
+            margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border);
+            display: flex; align-items: center; gap: 0.6rem;
+        }
+        .faculty-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1rem; }
+        .faculty-card {
+            background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+            padding: 1.1rem; display: flex; align-items: center; gap: 1rem;
+            transition: all var(--transition); cursor: default;
+        }
+        .faculty-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+        .faculty-avatar {
+            width: 50px; height: 50px; border-radius: 50%; background: var(--primary-gradient);
+            color: white; display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 1rem; flex-shrink: 0; object-fit: cover;
+        }
+        .faculty-avatar img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        .faculty-info h4 { font-weight: 600; font-size: 0.92rem; color: var(--text-primary); }
+        .faculty-info .qual { font-size: 0.78rem; color: var(--text-secondary); }
+        .faculty-info .dept-tag { font-size: 0.7rem; color: var(--primary); font-weight: 600; margin-top: 0.2rem; }
+        .faculty-cv { margin-top: 0.3rem; }
+        .faculty-cv a { font-size: 0.7rem; color: var(--accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem; }
+        .faculty-cv a:hover { text-decoration: underline; }
+
+        /* ===== COURSES ===== */
+        .course-card {
+            background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl);
+            overflow: hidden; transition: all var(--transition); box-shadow: var(--shadow-xs);
+        }
+        .course-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+        .course-header { background: var(--primary-gradient); padding: 1.5rem; color: white; }
+        .course-header h3 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .course-header p { font-size: 0.85rem; opacity: 0.9; }
+        .course-body { padding: 1.5rem; }
+        .course-details { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin: 1rem 0; }
+        .course-detail-item { background: var(--surface-alt); border-radius: var(--radius-md); padding: 0.7rem; }
+        .course-detail-item .label { font-size: 0.7rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .course-detail-item .value { font-size: 0.88rem; color: var(--text-primary); font-weight: 600; margin-top: 0.2rem; }
+        .subject-list { list-style: none; margin: 0.8rem 0; }
+        .subject-list li { font-size: 0.83rem; color: var(--text-secondary); padding: 0.3rem 0; display: flex; align-items: center; gap: 0.5rem; }
+        .subject-list li::before { content: '•'; color: var(--primary); font-weight: 700; }
+        .course-footer { padding: 1rem 1.5rem; border-top: 1px solid var(--border); display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+
+        /* ===== ADMISSION SECTION ===== */
+        .admission-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.8rem; margin: 2rem 0; }
+        .admission-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 1.8rem; transition: all var(--transition); }
+        .admission-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+        .admission-card h3 { font-family: var(--font-display); color: var(--primary); margin-bottom: 1rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .admission-steps { list-style: none; counter-reset: step; }
+        .admission-steps li { counter-increment: step; padding: 0.6rem 0; font-size: 0.87rem; color: var(--text-secondary); display: flex; align-items: flex-start; gap: 0.8rem; border-bottom: 1px solid var(--border-light); }
+        .admission-steps li::before { content: counter(step); background: var(--primary-gradient); color: white; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; flex-shrink: 0; margin-top: 0.1rem; }
+        .eligibility-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 0.5rem; }
+        .eligibility-table th { background: var(--primary-gradient); color: white; padding: 0.6rem 0.8rem; text-align: left; font-size: 0.8rem; }
+        .eligibility-table td { padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--border-light); color: var(--text-secondary); }
+        .eligibility-table tr:hover td { background: var(--surface-alt); }
+        .fee-highlight { background: linear-gradient(135deg, #FEF3C7, #FDE68A); border-radius: var(--radius-lg); padding: 1rem; margin: 0.8rem 0; border-left: 4px solid var(--accent); }
+        .fee-highlight h4 { color: #92400E; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.3rem; }
+        .fee-highlight p { color: #78350F; font-size: 0.83rem; }
+        [data-theme="dark"] .fee-highlight { background: linear-gradient(135deg, #78350F, #92400E); }
+        [data-theme="dark"] .fee-highlight h4, [data-theme="dark"] .fee-highlight p { color: #FDE68A; }
+
+        /* ===== GALLERY ===== */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; margin: 2rem 0; }
+        .gallery-item { border-radius: var(--radius-lg); overflow: hidden; position: relative; aspect-ratio: 4/3; box-shadow: var(--shadow-sm); cursor: pointer; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition); }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item .gallery-overlay {
+            position: absolute; inset: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            opacity: 0; transition: opacity var(--transition); display: flex; align-items: flex-end; padding: 1rem;
+        }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay p { color: white; font-size: 0.85rem; font-weight: 600; }
+
+        /* ===== LIGHTBOX ===== */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 3000; justify-content: center; align-items: center; padding: 2rem; }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: var(--radius-lg); }
+        .lightbox-close { position: absolute; top: 1rem; right: 1.5rem; color: white; font-size: 2rem; cursor: pointer; background: none; border: none; line-height: 1; }
+        .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); color: white; border: none; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+        .lightbox-nav:hover { background: rgba(255,255,255,0.4); }
+        .lightbox-prev { left: 1rem; }
+        .lightbox-next { right: 1rem; }
+
+        /* ===== REVIEWS ===== */
+        .reviews-section { background: var(--surface-alt); padding: 3rem 2rem; margin: 3rem 0; border-radius: var(--radius-2xl); position: relative; overflow: hidden; }
+        .reviews-section::before { content: ''; position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--primary); opacity: 0.05; border-radius: 50%; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.5rem; position: relative; z-index: 1; }
+        .review-card { background: var(--surface); border-radius: var(--radius-xl); padding: 1.7rem; box-shadow: var(--shadow-sm); transition: all var(--transition); border: 1px solid var(--border); position: relative; overflow: hidden; }
+        .review-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+        .review-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--primary-gradient); }
+        .review-header { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; }
+        .review-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--primary-gradient); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1rem; flex-shrink: 0; }
+        .review-name { font-weight: 600; font-size: 0.88rem; color: var(--text-primary); }
+        .review-date { font-size: 0.7rem; color: var(--text-muted); }
+        .stars { color: var(--accent); margin-bottom: 0.5rem; letter-spacing: 2px; }
+
+        /* ===== SYLLABUS SECTION ===== */
+        .syllabus-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 2rem 0; }
+        .resource-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; margin: 1.5rem 0; }
+        .resource-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.2rem; text-align: center; text-decoration: none; color: var(--text-primary); transition: all var(--transition); }
+        .resource-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary); color: var(--primary); }
+        .resource-card i { font-size: 2rem; margin-bottom: 0.7rem; color: var(--primary); display: block; }
+        .resource-card span { font-size: 0.85rem; font-weight: 600; }
+
+        /* ===== CONTACT ===== */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
+        .contact-info-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 2rem; box-shadow: var(--shadow-sm); }
+        .contact-info-card h3 { font-family: var(--font-display); margin-bottom: 1.2rem; color: var(--primary); }
+        .contact-row { display: flex; align-items: flex-start; gap: 0.8rem; margin-bottom: 0.9rem; font-size: 0.88rem; }
+        .contact-row i { color: var(--primary); width: 20px; flex-shrink: 0; margin-top: 0.1rem; }
+        .contact-row a { color: var(--primary); text-decoration: none; }
+        .contact-row a:hover { text-decoration: underline; }
+        .social-buttons { display: flex; gap: 0.8rem; margin-top: 1.5rem; flex-wrap: wrap; }
+        .map-wrapper { border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--border); height: 100%; min-height: 360px; }
+        .map-wrapper iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+        /* ===== KRISHNA BOT ===== */
+        .krishna-bot { position: fixed; bottom: 25px; right: 25px; z-index: 1000; }
+        .bot-toggle { width: 63px; height: 63px; border-radius: 50%; background: var(--primary-gradient); border: none; cursor: pointer; box-shadow: var(--shadow-xl); display: flex; align-items: center; justify-content: center; font-size: 1.9rem; transition: all var(--transition); animation: float 3s infinite; position: relative; }
+        .bot-toggle:hover { transform: scale(1.1); box-shadow: var(--shadow-glow-accent); }
+        .bot-toggle .notification-dot { position: absolute; top: 8px; right: 8px; width: 11px; height: 11px; background: #EF4444; border-radius: 50%; border: 2px solid white; animation: pulse-glow 2s infinite; }
+        .bot-panel { position: absolute; bottom: 78px; right: 0; width: 400px; max-height: 550px; background: var(--surface); border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); border: 1px solid var(--border); display: none; flex-direction: column; overflow: hidden; }
+        .bot-panel.active { display: flex; animation: scaleIn 0.3s ease; }
+        .bot-header { background: var(--primary-gradient); padding: 1rem 1.2rem; color: white; display: flex; align-items: center; gap: 0.8rem; flex-shrink: 0; }
+        .bot-avatar-img { width: 40px; height: 40px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+        .bot-status { font-size: 0.7rem; opacity: 0.9; display: flex; align-items: center; gap: 0.3rem; }
+        .online-dot { width: 7px; height: 7px; background: #34D399; border-radius: 50%; animation: pulse-glow 2s infinite; }
+        .bot-messages { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: 0.8rem; max-height: 320px; }
+        .bot-msg { max-width: 88%; padding: 0.7rem 1rem; border-radius: 1rem; font-size: 0.87rem; line-height: 1.5; animation: slideUp 0.3s ease; word-wrap: break-word; }
+        .bot-msg.bot { background: var(--surface-alt); color: var(--text-primary); border-bottom-left-radius: 0.2rem; align-self: flex-start; }
+        .bot-msg.user { background: var(--primary-gradient); color: white; border-bottom-right-radius: 0.2rem; align-self: flex-end; }
+        .bot-typing { display: flex; gap: 4px; padding: 0.7rem 1rem; align-self: flex-start; }
+        .bot-typing span { width: 7px; height: 7px; background: var(--text-muted); border-radius: 50%; animation: float 1s infinite; }
+        .bot-typing span:nth-child(2) { animation-delay: 0.2s; }
+        .bot-typing span:nth-child(3) { animation-delay: 0.4s; }
+        .bot-options { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.5rem 1rem; }
+        .bot-option { padding: 0.42rem 0.9rem; background: var(--surface-elevated); border: 1px solid var(--border); border-radius: var(--radius-full); cursor: pointer; font-size: 0.76rem; transition: all var(--transition-fast); color: var(--text-primary); white-space: nowrap; font-family: var(--font-body); }
+        .bot-option:hover { background: var(--primary); color: white; border-color: var(--primary); transform: scale(1.03); }
+        .bot-input-area { padding: 0.8rem; border-top: 1px solid var(--border); display: flex; gap: 0.5rem; flex-shrink: 0; }
+        .bot-input-area input { flex: 1; padding: 0.58rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-full); font-family: var(--font-body); background: var(--surface-alt); color: var(--text-primary); font-size: 0.84rem; outline: none; transition: border-color var(--transition-fast); }
+        .bot-input-area input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(8,145,178,0.1); }
+        .bot-input-area button { width: 40px; height: 40px; border-radius: 50%; background: var(--primary-gradient); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all var(--transition-fast); flex-shrink: 0; }
+        .bot-input-area button:hover { transform: scale(1.1); }
+
+        /* ===== MODAL ===== */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 2000; justify-content: center; align-items: center; backdrop-filter: blur(4px); }
+        .modal-overlay.active { display: flex; }
+        .modal-content { background: var(--surface); border-radius: var(--radius-xl); padding: 2rem; width: 90%; max-width: 420px; box-shadow: var(--shadow-xl); animation: scaleIn 0.3s ease; }
+        .modal-content h3 { font-family: var(--font-display); margin-bottom: 1rem; color: var(--text-primary); }
+        .modal-content input { width: 100%; padding: 0.7rem 1rem; margin-bottom: 0.8rem; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface-alt); color: var(--text-primary); font-family: var(--font-body); font-size: 0.9rem; transition: border-color var(--transition-fast); outline: none; }
+        .modal-content input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(8,145,178,0.1); }
+        .close-modal { float: right; background: none; border: none; font-size: 1.3rem; cursor: pointer; color: var(--text-muted); }
+
+        /* ===== FOOTER ===== */
+        .site-footer { background: #0F172A; color: #CBD5E1; padding: 3rem 2rem 1rem; margin-top: 3rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2.5rem; max-width: 1350px; margin: 0 auto; }
+        .footer-grid h4 { color: white; margin-bottom: 1rem; font-family: var(--font-display); font-size: 1.05rem; }
+        .footer-grid ul { list-style: none; }
+        .footer-grid li { margin-bottom: 0.5rem; }
+        .footer-grid a { color: #94A3B8; font-size: 0.83rem; text-decoration: none; transition: color var(--transition-fast); }
+        .footer-grid a:hover { color: var(--accent); }
+        .footer-social { display: flex; gap: 1rem; margin-top: 0.8rem; }
+        .footer-social a { width: 36px; height: 36px; border-radius: 50%; background: #334155; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.95rem; transition: all var(--transition-fast); }
+        .footer-social a:hover { background: var(--primary); transform: translateY(-3px); }
+        .footer-bottom { text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid #334155; color: #64748B; font-size: 0.78rem; max-width: 1350px; margin-left: auto; margin-right: auto; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--surface); flex-direction: column; box-shadow: var(--shadow-xl); border-radius: 0 0 var(--radius-xl) var(--radius-xl); border: 1px solid var(--border); max-height: 70vh; overflow-y: auto; padding: 0.5rem 0; }
+            .nav-links.active { display: flex; }
+            .mobile-toggle { display: block; }
+            .dropdown { position: static; box-shadow: none; opacity: 1; visibility: visible; transform: none; display: none; border-radius: 0; border: none; border-left: 3px solid var(--primary); margin-left: 1rem; min-width: 0; }
+            .nav-item.mob-open .dropdown { display: block; }
+            .nav-link { width: 100%; }
+            .principal-card { flex-direction: column; align-items: center; text-align: center; }
+            .principal-message { text-align: left; }
+            .bot-panel { width: 350px; right: 10px; }
+            .swiper { height: 320px; }
+            .vision-mission-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 640px) {
+            .header-content { flex-direction: column; text-align: center; gap: 0.8rem; }
+            .college-title h1 { font-size: 1.15rem; }
+            .swiper { height: 220px; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .bot-panel { width: calc(100vw - 20px); right: 10px; bottom: 75px; }
+            .bot-toggle { width: 55px; height: 55px; font-size: 1.5rem; }
+            .hero-wrapper { margin: 1rem; border-radius: var(--radius-lg); }
+            .container { padding: 0 1rem; }
+            .section-header h2 { font-size: 1.6rem; }
+            .faculty-grid { grid-template-columns: 1fr; }
+            .stats-bar { grid-template-columns: 1fr 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .top-ribbon { display: none; }
+            .course-details { grid-template-columns: 1fr; }
+            .admission-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ==================== STICKY HEADER GROUP (FIXED) ==================== -->
+<div class="sticky-header-group" id="stickyGroup">
+
+    <!-- TOP RIBBON -->
+    <div class="top-ribbon">
+        <a href="tel:+918895673760"><i class="fas fa-phone-alt"></i> +91 8895673760</a>
+        <a href="mailto:principal.cbst@gmail.com"><i class="fas fa-envelope"></i> principal.cbst@gmail.com</a>
+        <span><i class="fas fa-map-marker-alt"></i> Gopalgaon, Balasore, Odisha 756001</span>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="main-header" id="header">
+        <div class="header-content">
+            <a href="#" class="logo-section" aria-label="CBST Home">
+                <img src="public/CBST.png"
+                     alt="CBST College Logo"
+                     class="logo-img"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2265%22 height=%2265%22%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2230%22 fill=%22%230891B2%22/%3E%3Ctext x=%2232%22 y=%2240%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2216%22 font-family=%22Arial%22%3ECBST%3C/text%3E%3C/svg%3E'">
+                <div class="college-title">
+                    <h1>College of Basic Science & Technology</h1>
+                    <p class="subtitle">Gopalgaon, Balasore, Odisha &nbsp;|&nbsp; Affiliated to Fakir Mohan University &nbsp;|&nbsp; AICTE Approved</p>
+                </div>
+            </a>
+            <div class="affiliation-badges">
+                <span class="badge badge-aicte">✅ AICTE Approved</span>
+                <span class="badge badge-govt">🏛️ Govt. of Odisha</span>
+                <span class="badge badge-fm">🎓 FM University</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-container">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li class="nav-item" role="none"><a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item" role="none">
+                    <span class="nav-link" role="menuitem" aria-haspopup="true">About <i class="fas fa-caret-down caret"></i></span>
+                    <div class="dropdown">
+                        <a href="#vision-mission">Vision &amp; Mission</a>
+                        <a href="#principal-msg">Principal's Message</a>
+                        <a href="http://cbst.in/pages/succession-list.html" target="_blank">Succession List</a>
+                        <a href="http://cbst.in/pages/governing-body.html" target="_blank">Governing Body</a>
+                        <a href="http://cbst.in/pages/internal-complaint-committee.html" target="_blank">Internal Complaint Committee</a>
+                        <a href="http://cbst.in/pages/annual-reports.html" target="_blank">Annual Report</a>
+                        <a href="http://cbst.in/pages/professional-ethics.html" target="_blank">Professional Ethics</a>
+                    </div>
+                </li>
+                <li class="nav-item" role="none">
+                    <span class="nav-link" role="menuitem" aria-haspopup="true">Academic <i class="fas fa-caret-down caret"></i></span>
+                    <div class="dropdown">
+                        <a href="#courses">Courses Offered</a>
+                        <a href="#faculty">Faculty Directory</a>
+                        <a href="http://cbst.in/pages/syllabus.php" target="_blank">Syllabus</a>
+                        <a href="http://cbst.in/pages/timetable.html" target="_blank">Time Table</a>
+                        <a href="http://cbst.in/pages/academic-calendar.html" target="_blank">Academic Calendar</a>
+                        <a href="http://cbst.in/pages/college-rules.html" target="_blank">College Rules</a>
+                    </div>
+                </li>
+                <li class="nav-item" role="none">
+                    <span class="nav-link" role="menuitem" aria-haspopup="true">Admission <i class="fas fa-caret-down caret"></i></span>
+                    <div class="dropdown">
+                        <a href="#admission">Admission Info</a>
+                        <a href="http://cbst.in/pages/prospectus.html" target="_blank">Prospectus</a>
+                        <a href="http://cbst.in/pages/admission-procedure.html" target="_blank">Admission Procedure</a>
+                        <a href="http://cbst.in/pages/fee-refund-policy.html" target="_blank">Fee Refund Policy</a>
+                        <a href="http://cbst.in/pages/course-outcomes.html" target="_blank">Course Outcomes</a>
+                    </div>
+                </li>
+                <li class="nav-item" role="none">
+                    <span class="nav-link" role="menuitem" aria-haspopup="true">Examination <i class="fas fa-caret-down caret"></i></span>
+                    <div class="dropdown">
+                        <a href="http://cbst.in/pages/exam-rules.html" target="_blank">Rules &amp; Regulations</a>
+                        <a href="http://cbst.in/pages/exam-schedule.html" target="_blank">Examination Schedule</a>
+                        <a href="http://cbst.in/pages/previous-questions.html" target="_blank">Previous Year Questions</a>
+                    </div>
+                </li>
+                <li class="nav-item" role="none"><a href="#notices" class="nav-link">Notices</a></li>
+                <li class="nav-item" role="none"><a href="#gallery-section" class="nav-link">Gallery</a></li>
+                <li class="nav-item" role="none"><a href="#contact-section" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-btn" id="themeToggle" aria-label="Toggle dark/light mode" title="Switch Theme">
+                    <i class="fas fa-moon"></i> <span class="theme-label">Dark</span>
+                </button>
+                <a href="http://cbst.in/" target="_blank" class="nav-btn" title="Official CBST Website">
+                    <i class="fas fa-external-link-alt"></i> <span>Old Site</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- ==================== CSS TICKER (replaces marquee) ==================== -->
+<div class="notice-bar" aria-label="Latest announcements">
+    <div class="ticker-wrapper">
+        <div class="ticker-track">
+            <a href="http://cbst.in/notices/notice_68a44a0caa2f1.pdf" target="_blank">📄 2nd Sem Back Exam 2025 <span class="new-badge">NEW</span></a>
+            <a href="http://cbst.in/notices/notice_68a448937a567.pdf" target="_blank">📋 5th Sem Internal Exam 2025 <span class="new-badge">NEW</span></a>
+            <a href="http://cbst.in/notices/notice_68a449912fdf0.pdf" target="_blank">📅 2nd Semester University Examination 2025 <span class="new-badge">NEW</span></a>
+            <a href="http://cbst.in/notices/notice_68a443055b000.pdf" target="_blank">📰 July 2025 News Letter <span class="new-badge">NEW</span></a>
+            <a href="http://cbst.in/notices/notice_67fe5d76121dc.pdf" target="_blank">🎓 Admission 2025-26 Open | BCA &amp; B.Sc.</a>
+            <a href="http://cbst.in/notices/notice_680cd563e41e8.pdf" target="_blank">🏆 TCS Ignite &amp; Smart Hiring Drive 2025</a>
+            <a href="http://cbst.in/notices/notice_67ffb2125e3d4.pdf" target="_blank">📚 Subject List as per NEP-2020</a>
+            <!-- duplicate for seamless loop -->
+            <a href="http://cbst.in/notices/notice_68a44a0caa2f1.pdf" target="_blank">📄 2nd Sem Back Exam 2025 <span class="new-badge">NEW</span></a>
+            <a href="http://cbst.in/notices/notice_68a448937a567.pdf" target="_blank">📋 5th Sem Internal Exam 2025 <span class="new-badge">NEW</span></a>
+            <a href="http://cbst.in/notices/notice_68a449912fdf0.pdf" target="_blank">📅 2nd Semester University Examination 2025 <span class="new-badge">NEW</span></a>
+            <a href="http://cbst.in/notices/notice_68a443055b000.pdf" target="_blank">📰 July 2025 News Letter <span class="new-badge">NEW</span></a>
+            <a href="http://cbst.in/notices/notice_67fe5d76121dc.pdf" target="_blank">🎓 Admission 2025-26 Open | BCA &amp; B.Sc.</a>
+            <a href="http://cbst.in/notices/notice_680cd563e41e8.pdf" target="_blank">🏆 TCS Ignite &amp; Smart Hiring Drive 2025</a>
+            <a href="http://cbst.in/notices/notice_67ffb2125e3d4.pdf" target="_blank">📚 Subject List as per NEP-2020</a>
+        </div>
+    </div>
+</div>
+
+<main id="main-content">
+
+<!-- ==================== HERO SLIDER (REAL IMAGES) ==================== -->
+<section class="hero-wrapper animate-fade-in-up" aria-label="Campus slideshow">
+    <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="public/img1.jpg" alt="CBST Campus"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221300%22 height=%22480%22%3E%3Cdefs%3E%3ClinearGradient id=%22g1%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22%3E%3Cstop offset=%220%25%22 style=%22stop-color:%230891B2%22/%3E%3Cstop offset=%22100%25%22 style=%22stop-color:%230E7490%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%221300%22 height=%22480%22 fill=%22url(%23g1)%22/%3E%3Ctext x=%22650%22 y=%22240%22 font-size=%2248%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22%3E🏛️ CBST Campus%3C/text%3E%3C/svg%3E'">
+                <div class="slide-overlay"><h2>College of Basic Science & Technology</h2><p>Excellence in Science & Technology since 2016</p></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="public/Slider1.jpg" alt="CBST Building"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221300%22 height=%22480%22%3E%3Crect width=%221300%22 height=%22480%22 fill=%22%231E293B%22/%3E%3Ctext x=%22650%22 y=%22240%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22%2322D3EE%22 font-family=%22Arial%22%3E🏫 Our Campus%3C/text%3E%3C/svg%3E'">
+                <div class="slide-overlay"><h2>Our Campus</h2><p>A vibrant place for learning and growth</p></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="public/img9.jpg" alt="CBST Students"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221300%22 height=%22480%22%3E%3Crect width=%221300%22 height=%22480%22 fill=%22%23F59E0B%22/%3E%3Ctext x=%22650%22 y=%22240%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22%3E🎓 Student Life%3C/text%3E%3C/svg%3E'">
+                <div class="slide-overlay"><h2>Vibrant Student Life</h2><p>Cultural Events · Sports · Seminars</p></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="public/FMU_InternshipWithDept.jpg" alt="FMU Internship"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221300%22 height=%22480%22%3E%3Crect width=%221300%22 height=%22480%22 fill=%22%2310B981%22/%3E%3Ctext x=%22650%22 y=%22240%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22%3E🔬 Internships%3C/text%3E%3C/svg%3E'">
+                <div class="slide-overlay"><h2>FM University Internship Program</h2><p>Industry-oriented practical learning experiences</p></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="public/FMU_Internship_Certificates.jpg" alt="Internship Certificates"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221300%22 height=%22480%22%3E%3Crect width=%221300%22 height=%22480%22 fill=%22%236D28D9%22/%3E%3Ctext x=%22650%22 y=%22240%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22%3E🏆 Achievements%3C/text%3E%3C/svg%3E'">
+                <div class="slide-overlay"><h2>Recognitions & Certificates</h2><p>Celebrating student achievements and milestones</p></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="public/CSA.jpg" alt="CBST Events"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221300%22 height=%22480%22%3E%3Crect width=%221300%22 height=%22480%22 fill=%22%230891B2%22/%3E%3Ctext x=%22650%22 y=%22240%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22%3E🌟 Events%3C/text%3E%3C/svg%3E'">
+                <div class="slide-overlay"><h2>Campus Events & Activities</h2><p>Building leaders beyond the classroom</p></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<!-- ==================== STATS BAR ==================== -->
+<div class="container">
+    <div class="stats-bar animate-fade-in-up delay-100">
+        <div class="stat-item">
+            <div class="stat-number">2016</div>
+            <div class="stat-label">Founded</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Faculty Members</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">2</div>
+            <div class="stat-label">UG Programs</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Departments</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Students</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== NOTICES / NEWS / EVENTS ==================== -->
+<section class="container" id="notices">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">📢 Latest Updates</span>
+        <h2>Notices & Announcements</h2>
+        <p>Stay informed with the latest exam schedules, admissions, events, and college news</p>
+    </div>
+    <div class="cards-grid">
+        <div class="info-card animate-fade-in-left delay-100">
+            <div class="info-card-header"><i class="fas fa-bullhorn"></i> Announcements</div>
+            <div class="info-card-body">
+                <ul>
+                    <li><a href="http://cbst.in/notices/notice_68a44a0caa2f1.pdf" target="_blank">📄 2nd Sem Back Exam 2025 <span class="new-badge">NEW</span></a></li>
+                    <li><a href="http://cbst.in/notices/notice_68a448937a567.pdf" target="_blank">📋 5th Sem Internal Exam 2025 <span class="new-badge">NEW</span></a></li>
+                    <li><a href="http://cbst.in/notices/notice_68a449912fdf0.pdf" target="_blank">📅 2nd Semester University Exam 2025</a></li>
+                    <li><a href="http://cbst.in/notices/notice_68836106948e8.pdf" target="_blank">👥 Internal Committee Member Notification</a></li>
+                    <li><a href="http://cbst.in/notices/notice_683bf29ef3083.pdf" target="_blank">📝 BCA 2nd Sem Time Table</a></li>
+                    <li><a href="http://cbst.in/notices/notice_6829cf3ec2179.pdf" target="_blank">📢 BCA 2nd Sem Class Start</a></li>
+                    <li><a href="http://cbst.in/notices/notice_680cd563e41e8.pdf" target="_blank">🎯 TCS Ignite &amp; Smart Hiring 2025</a></li>
+                    <li><a href="http://cbst.in/notices/notice_67ffb2125e3d4.pdf" target="_blank">📚 Subject List as per NEP-2020</a></li>
+                    <li><a href="http://cbst.in/notices/notice_67fe5d76121dc.pdf" target="_blank">🎓 Admission 2025-26 Open</a></li>
+                </ul>
+            </div>
+            <div class="info-card-footer"><a href="http://cbst.in/pages/notices.php" target="_blank" class="btn btn-outline btn-sm">View All Notices →</a></div>
+        </div>
+        <div class="info-card animate-fade-in-up delay-200">
+            <div class="info-card-header"><i class="fas fa-newspaper"></i> News & Newsletters</div>
+            <div class="info-card-body">
+                <ul>
+                    <li><a href="http://cbst.in/notices/notice_68a443055b000.pdf" target="_blank">📰 July 2025 News Letter <span class="new-badge">NEW</span></a></li>
+                    <li><a href="http://cbst.in/notices/notice_6863c060d11ad.pdf" target="_blank">📰 June 2025 News Letter</a></li>
+                    <li><a href="http://cbst.in/notices/notice_6847b15634065.pdf" target="_blank">📰 May 2025 News Letter</a></li>
+                    <li><a href="http://cbst.in/notices/notice_6812e9bcca7d1.pdf" target="_blank">📰 April 2025 News Letter</a></li>
+                    <li><a href="http://cbst.in/notices/notice_67fa4851141c9.pdf" target="_blank">📰 March 2025 News Letter</a></li>
+                    <li><a href="http://cbst.in/notices/notice_67fa483eec1c1.pdf" target="_blank">📰 February 2025 News Letter</a></li>
+                    <li><a href="http://cbst.in/notices/notice_67fa481fd2298.pdf" target="_blank">📰 January 2025 News Letter</a></li>
+                </ul>
+            </div>
+            <div class="info-card-footer"><a href="http://cbst.in/pages/notices.php" target="_blank" class="btn btn-outline btn-sm">All Newsletters →</a></div>
+        </div>
+        <div class="info-card animate-fade-in-right delay-300">
+            <div class="info-card-header"><i class="fas fa-calendar-check"></i> Events</div>
+            <div class="info-card-body">
+                <ul>
+                    <li><a href="http://cbst.in/notices/notice_67a0d2ac88722.pdf" target="_blank">🙏 Saraswati Puja Celebration 2025</a></li>
+                    <li><a href="#">🏆 Annual Sports Meet 2025</a></li>
+                    <li><a href="#">🎭 Cultural Fest — CBST Utsav 2025</a></li>
+                    <li><a href="#">📚 Workshop on NEP 2020 Implementation</a></li>
+                    <li><a href="#">💻 Tech Fest — CodeWars 2025</a></li>
+                    <li><a href="#">🌱 Plantation Drive — Social Work</a></li>
+                    <li><a href="#">🧪 Science Exhibition 2025</a></li>
+                </ul>
+            </div>
+            <div class="info-card-footer"><a href="http://cbst.in/pages/notices.php" target="_blank" class="btn btn-outline btn-sm">All Events →</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== VISION & MISSION ==================== -->
+<section class="container" id="vision-mission">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">🎯 Our Purpose</span>
+        <h2>Vision & Mission</h2>
+        <p>The principles and goals that guide everything we do at CBST</p>
+    </div>
+    <div class="vision-mission-grid">
+        <div class="vm-card animate-fade-in-left delay-100">
+            <div class="vm-icon">🔭</div>
+            <h3>Our Vision</h3>
+            <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:1rem;">To emerge as a centre of excellence in Science & Technology education, fostering innovation, ethics, and lifelong learning for the betterment of society.</p>
+        </div>
+        <div class="vm-card animate-fade-in-right delay-200">
+            <div class="vm-icon">🚀</div>
+            <h3>Our Mission</h3>
+            <ul>
+                <li>Provide quality undergraduate education in Science & Technology</li>
+                <li>Develop holistic personalities through academics and co-curricular activities</li>
+                <li>Promote research aptitude and scientific temper among students</li>
+                <li>Ensure inclusive education with equal opportunities for all</li>
+                <li>Bridge the gap between academic learning and industry requirements</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PRINCIPAL'S MESSAGE ==================== -->
+<section class="container" id="principal-msg">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">👨‍🏫 Leadership</span>
+        <h2>Principal's Message</h2>
+    </div>
+    <div class="principal-card animate-fade-in-up delay-200">
+        <div class="principal-photo-wrapper">
+            <img src="public/principal.jpeg"
+                 alt="Prof. Somendra Kumar Pal - Principal CBST"
+                 class="principal-img"
+                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22175%22 height=%22175%22%3E%3Ccircle cx=%2287%22 cy=%2278%22 r=%2265%22 fill=%22%23CBD5E1%22/%3E%3Crect x=%2237%22 y=%22138%22 width=%22100%22 height=%2237%22 rx=%2210%22 fill=%22%230891B2%22/%3E%3Ctext x=%2287%22 y=%22110%22 font-size=%2248%22 text-anchor=%22middle%22%3E👤%3C/text%3E%3C/svg%3E'">
+            <div class="principal-badge">Principal</div>
+        </div>
+        <div style="flex:1;min-width:240px;">
+            <div class="principal-info">
+                <h3>Prof. Somendra Kumar Pal</h3>
+                <p class="qualifications">M.Sc. &amp; M.Phil in Physics | PGDCS (Utkal University)</p>
+                <p style="color:var(--text-secondary);font-size:0.83rem;margin-top:0.5rem;">
+                    <i class="fas fa-envelope" style="color:var(--primary);"></i> principal.cbst@gmail.com
+                </p>
+                <a href="http://cbst.in/cv/cv_67fa2a383cc65.pdf" target="_blank" class="btn btn-sm btn-outline" style="margin-top:0.8rem;">
+                    <i class="fas fa-file-pdf"></i> View CV
+                </a>
+            </div>
+        </div>
+        <div class="principal-message">
+            <p>"Join College of Basic Science and Technology to gain holistic knowledge that strikes a balance between cognitive growth, emotional wellbeing, scientific skills and good physical and mental health. This will prepare you to meet the challenges of life and enable you to become a cherished member of the global scientific society. Education is not just remembering facts but the lighting of a fire. Education is also not only about getting a job and becoming a rich person but also transforming the life and thinking process of a person. As Mahatma Gandhi has said — <em>Live as if you will die tomorrow, learn as if you will live forever.</em>"</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== COURSES OFFERED ==================== -->
+<section class="container" id="courses">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">📚 Academics</span>
+        <h2>Courses Offered</h2>
+        <p>Undergraduate programs affiliated to Fakir Mohan University, approved by AICTE, New Delhi</p>
+    </div>
+    <div class="cards-grid">
+        <div class="course-card animate-fade-in-left delay-100">
+            <div class="course-header">
+                <i class="fas fa-laptop-code" style="font-size:2rem;margin-bottom:0.5rem;display:block;"></i>
+                <h3>BCA — Bachelor of Computer Applications</h3>
+                <p>3-Year Undergraduate Degree Program</p>
+            </div>
+            <div class="course-body">
+                <div class="course-details">
+                    <div class="course-detail-item">
+                        <div class="label">Duration</div>
+                        <div class="value">3 Years (6 Semesters)</div>
+                    </div>
+                    <div class="course-detail-item">
+                        <div class="label">Intake Capacity</div>
+                        <div class="value">60 Seats</div>
+                    </div>
+                    <div class="course-detail-item">
+                        <div class="label">Affiliation</div>
+                        <div class="value">Fakir Mohan University</div>
+                    </div>
+                    <div class="course-detail-item">
+                        <div class="label">Approval</div>
+                        <div class="value">AICTE, New Delhi</div>
+                    </div>
+                </div>
+                <p style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:0.5rem;font-weight:600;">Core Subjects:</p>
+                <ul class="subject-list">
+                    <li>Programming: C, C++, Java, Python</li>
+                    <li>Database Management Systems</li>
+                    <li>Web Development & Design</li>
+                    <li>Software Engineering</li>
+                    <li>Computer Networks & Security</li>
+                    <li>AI / ML Fundamentals</li>
+                    <li>Mathematics & Statistics</li>
+                </ul>
+            </div>
+            <div class="course-footer">
+                <a href="#admission" class="btn btn-primary btn-sm"><i class="fas fa-user-plus"></i> Apply Now</a>
+                <a href="http://cbst.in/pages/syllabus.php" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-book"></i> Syllabus</a>
+            </div>
+        </div>
+        <div class="course-card animate-fade-in-right delay-200">
+            <div class="course-header">
+                <i class="fas fa-flask" style="font-size:2rem;margin-bottom:0.5rem;display:block;"></i>
+                <h3>B.Sc. — Bachelor of Science</h3>
+                <p>3-Year Undergraduate Degree Program</p>
+            </div>
+            <div class="course-body">
+                <div class="course-details">
+                    <div class="course-detail-item">
+                        <div class="label">Duration</div>
+                        <div class="value">3 Years (6 Semesters)</div>
+                    </div>
+                    <div class="course-detail-item">
+                        <div class="label">Framework</div>
+                        <div class="value">NEP 2020</div>
+                    </div>
+                    <div class="course-detail-item">
+                        <div class="label">Affiliation</div>
+                        <div class="value">Fakir Mohan University</div>
+                    </div>
+                    <div class="course-detail-item">
+                        <div class="label">Recognition</div>
+                        <div class="value">Govt. of Odisha</div>
+                    </div>
+                </div>
+                <p style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:0.5rem;font-weight:600;">Departments:</p>
+                <ul class="subject-list">
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Zoology</li>
+                    <li>Well-equipped Science Laboratories</li>
+                    <li>Field Visits &amp; Research Projects</li>
+                    <li>Experienced Faculty Guidance</li>
+                </ul>
+            </div>
+            <div class="course-footer">
+                <a href="#admission" class="btn btn-primary btn-sm"><i class="fas fa-user-plus"></i> Apply Now</a>
+                <a href="http://cbst.in/pages/syllabus.php" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-book"></i> Syllabus</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FACULTY DIRECTORY (CORRECTED) ==================== -->
+<section class="container" id="faculty">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">👩‍🏫 Our Team</span>
+        <h2>Faculty Directory</h2>
+        <p>Meet our dedicated educators — as listed on the official CBST website</p>
+    </div>
+
+    <!-- Department of Physics -->
+    <div class="department-section animate-fade-in-up delay-100">
+        <div class="department-title"><i class="fas fa-atom"></i> Department of Physics</div>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="public/principal.jpeg" alt="Prof. Somendra Kumar Pal" class="faculty-avatar"
+                     onerror="this.outerHTML='&lt;div class=&quot;faculty-avatar&quot;&gt;SP&lt;/div&gt;'">
+                <div class="faculty-info">
+                    <h4>Prof. Somendra Kumar Pal</h4>
+                    <p class="qual">M.Sc., M.Phil (Physics), PGDCS</p>
+                    <p class="dept-tag">Principal &amp; HOD</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_67fa2a383cc65.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">BC</div>
+                <div class="faculty-info">
+                    <h4>Mr. Bharat Chandra Maharana</h4>
+                    <p class="qual">M.Sc. in Physics</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d335736c6.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">AG</div>
+                <div class="faculty-info">
+                    <h4>Mrs. Alisha Giri</h4>
+                    <p class="qual">M.Sc., M.Phil in Physics</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d379b200c.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">BD</div>
+                <div class="faculty-info">
+                    <h4>Mrs. Bipsa Das</h4>
+                    <p class="qual">M.Sc., M.Phil in Physics</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d3a79cd63.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">HB</div>
+                <div class="faculty-info">
+                    <h4>Mr. Haripada Behera</h4>
+                    <p class="qual">M.Sc. in Physics</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d409d4f10.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Department of Chemistry -->
+    <div class="department-section animate-fade-in-up delay-200">
+        <div class="department-title"><i class="fas fa-vial"></i> Department of Chemistry</div>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <div class="faculty-avatar">AB</div>
+                <div class="faculty-info">
+                    <h4>Mrs. Anushree Bera</h4>
+                    <p class="qual">M.Sc. in Chemistry</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d4cccec37.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">AG</div>
+                <div class="faculty-info">
+                    <h4>Mr. Avishek Giri</h4>
+                    <p class="qual">M.Sc. in Chemistry</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d51cd5214.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">AK</div>
+                <div class="faculty-info">
+                    <h4>Mr. Asit Kumar Pradhan</h4>
+                    <p class="qual">M.Sc., M.Phil in Chemistry</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d550ed445.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">BM</div>
+                <div class="faculty-info">
+                    <h4>Mr. Bijay Mohanty</h4>
+                    <p class="qual">B.Sc. in Chemistry</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d58cde877.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Department of Zoology -->
+    <div class="department-section animate-fade-in-up delay-300">
+        <div class="department-title"><i class="fas fa-fish"></i> Department of Zoology</div>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="picture/pic_67fa44fb49fb4.png" alt="Dr. Nilima Priyadarshini Marhual" class="faculty-avatar"
+                     onerror="this.outerHTML='&lt;div class=&quot;faculty-avatar&quot;&gt;NM&lt;/div&gt;'">
+                <div class="faculty-info">
+                    <h4>Dr. Nilima Priyadarshini Marhual</h4>
+                    <p class="qual">Ph.D in Zoology</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_67fa44fb49fb2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">PS</div>
+                <div class="faculty-info">
+                    <h4>Mr. Pranay Kumar Sahoo</h4>
+                    <p class="qual">M.Sc. in Zoology</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_67fa45288efec.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">PB</div>
+                <div class="faculty-info">
+                    <h4>Mr. Pralaya Kumar Behera</h4>
+                    <p class="qual">M.Sc. in Zoology</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_67fa464dd2a6a.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">PN</div>
+                <div class="faculty-info">
+                    <h4>Mr. Pravat Kumar Nandy</h4>
+                    <p class="qual">B.Sc., B.Ed.</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_67fa4701e207e.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Department of Computer Science -->
+    <div class="department-section animate-fade-in-up delay-400">
+        <div class="department-title"><i class="fas fa-laptop-code"></i> Department of Computer Science (BCA)</div>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="picture/pic_67fa342912d4f.jpeg" alt="Manisha Mahalaxmi" class="faculty-avatar"
+                     onerror="this.outerHTML='&lt;div class=&quot;faculty-avatar&quot;&gt;MM&lt;/div&gt;'">
+                <div class="faculty-info">
+                    <h4>Manisha Mahalaxmi</h4>
+                    <p class="qual">M.Tech in CS (FM University)</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_67fa342912805.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <img src="picture/pic_67fa3402ea91a.jpeg" alt="Akanshya Sahoo" class="faculty-avatar"
+                     onerror="this.outerHTML='&lt;div class=&quot;faculty-avatar&quot;&gt;AS&lt;/div&gt;'">
+                <div class="faculty-info">
+                    <h4>Akanshya Sahoo</h4>
+                    <p class="qual">MCA (Arunachala University)</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_67fa3402ea917.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">HN</div>
+                <div class="faculty-info">
+                    <h4>Harmohan Nath</h4>
+                    <p class="qual">M.Sc. in CS (Bhadrak Autonomous College)</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_67fa35ea5fa93.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">PD</div>
+                <div class="faculty-info">
+                    <h4>Miss Palasapriya Das</h4>
+                    <p class="qual">M.Tech in CS (Jadavpur University)</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d65583a96.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">PP</div>
+                <div class="faculty-info">
+                    <h4>Mr. Pradipta Kumar Pradhan</h4>
+                    <p class="qual">MCA</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d68471702.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">JP</div>
+                <div class="faculty-info">
+                    <h4>Miss Jyotishree Parhi</h4>
+                    <p class="qual">MCA (CIME, Bhubaneswar)</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d6bdb9516.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">TP</div>
+                <div class="faculty-info">
+                    <h4>Mrs. Tapaswini Panda</h4>
+                    <p class="qual">M.Tech in CS (IMIT, Cuttack)</p>
+                    <p class="dept-tag">Faculty</p>
+                    <div class="faculty-cv"><a href="http://cbst.in/cv/cv_6829d7258a99e.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ADMISSION ==================== -->
+<section class="container" id="admission">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">🎓 Join Us</span>
+        <h2>Admission 2025–26</h2>
+        <p>Applications are open for BCA and B.Sc. programs for the academic year 2025–26</p>
+    </div>
+    <div style="background:linear-gradient(135deg,#0891B2,#06B6D4);border-radius:var(--radius-2xl);padding:2rem;text-align:center;color:white;margin-bottom:2rem;" class="animate-fade-in-up delay-100">
+        <h3 style="font-family:var(--font-display);font-size:1.5rem;margin-bottom:0.5rem;">🎓 Admissions are Open!</h3>
+        <p style="opacity:0.9;margin-bottom:1.2rem;">Apply now for BCA &amp; B.Sc. programs — Academic Year 2025–26</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <a href="http://cbst.in/notices/notice_67fe5d76121dc.pdf" target="_blank" class="btn btn-accent"><i class="fas fa-download"></i> Admission Notice PDF</a>
+            <a href="http://cbst.in/pages/admission-procedure.html" target="_blank" class="btn" style="background:white;color:var(--primary-dark);"><i class="fas fa-info-circle"></i> Admission Procedure</a>
+        </div>
+    </div>
+    <div class="admission-grid">
+        <div class="admission-card animate-fade-in-left delay-100">
+            <h3><i class="fas fa-list-ol"></i> How to Apply</h3>
+            <ol class="admission-steps">
+                <li>Obtain the Prospectus &amp; Application Form from the college office or download online</li>
+                <li>Fill the application form with correct personal &amp; academic details</li>
+                <li>Attach required documents (mark sheets, certificates, photos)</li>
+                <li>Submit the form along with the application fee at the college office</li>
+                <li>Attend the admission counselling / merit-based selection process</li>
+                <li>Pay the semester fee and complete college enrollment</li>
+            </ol>
+            <div style="margin-top:1.2rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+                <a href="http://cbst.in/pages/prospectus.html" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-book"></i> Prospectus</a>
+                <a href="http://cbst.in/pages/admission-procedure.html" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> Full Details</a>
+            </div>
+        </div>
+        <div class="admission-card animate-fade-in-up delay-200">
+            <h3><i class="fas fa-check-circle"></i> Eligibility Criteria</h3>
+            <table class="eligibility-table">
+                <thead>
+                    <tr><th>Program</th><th>Minimum Qualification</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>BCA</strong></td><td>10+2 in any stream with Mathematics</td></tr>
+                    <tr><td><strong>B.Sc.</strong></td><td>10+2 with Science subjects</td></tr>
+                    <tr><td>Both</td><td>Minimum 45% marks (40% for SC/ST)</td></tr>
+                    <tr><td>Age</td><td>As per FM University norms</td></tr>
+                </tbody>
+            </table>
+            <div class="fee-highlight">
+                <h4>💡 Fee Information</h4>
+                <p>Contact the college office or download the official prospectus for the latest fee structure. Scholarships available for eligible students.</p>
+            </div>
+        </div>
+        <div class="admission-card animate-fade-in-right delay-300">
+            <h3><i class="fas fa-file-alt"></i> Documents Required</h3>
+            <ul class="admission-steps" style="list-style:none;counter-reset:none;">
+                <li style="counter-increment:none;"><span style="color:var(--primary);font-weight:700;margin-right:0.5rem;">📄</span> 10th &amp; 12th Mark Sheets (original + attested copies)</li>
+                <li><span style="color:var(--primary);font-weight:700;margin-right:0.5rem;">📄</span> 10th &amp; 12th Pass Certificates</li>
+                <li><span style="color:var(--primary);font-weight:700;margin-right:0.5rem;">🪪</span> Aadhar Card / Voter ID</li>
+                <li><span style="color:var(--primary);font-weight:700;margin-right:0.5rem;">📷</span> Recent passport-size photographs (4 copies)</li>
+                <li><span style="color:var(--primary);font-weight:700;margin-right:0.5rem;">🏷️</span> Caste / Income Certificate (if applicable)</li>
+                <li><span style="color:var(--primary);font-weight:700;margin-right:0.5rem;">🏦</span> Bank Passbook copy for scholarship</li>
+            </ul>
+            <div style="margin-top:1rem;">
+                <a href="http://cbst.in/pages/fee-refund-policy.html" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-info-circle"></i> Fee Refund Policy</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== GALLERY ==================== -->
+<section class="container" id="gallery-section">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">🖼️ Campus Life</span>
+        <h2>Photo Gallery</h2>
+        <p>Glimpses of life, learning, and achievements at CBST Balasore</p>
+    </div>
+    <div class="gallery-grid animate-fade-in-up delay-100">
+        <div class="gallery-item" onclick="openLightbox(0)">
+            <img src="public/img1.jpg" alt="CBST Campus" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>CBST Campus</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(1)">
+            <img src="public/img2.jpg" alt="College Activity" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>College Activity</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(2)">
+            <img src="public/img3.jpg" alt="Students at CBST" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Students at CBST</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(3)">
+            <img src="public/img4.jpg" alt="Cultural Event" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Cultural Event</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(4)">
+            <img src="public/img5.jpg" alt="Sports Meet" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Sports Meet</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(5)">
+            <img src="public/img6.jpg" alt="Seminar" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Seminar</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(6)">
+            <img src="public/img7.jpg" alt="Academics" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Academics</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(7)">
+            <img src="public/img8.jpg" alt="Social Work" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Social Work</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(8)">
+            <img src="public/img9.jpg" alt="Study Tour" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Study Tour</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(9)">
+            <img src="public/img10.jpg" alt="Campus Life" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Campus Life</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(10)">
+            <img src="http://cbst.in/public/img11.jpg" alt="Events" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>Events</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(11)">
+            <img src="http://cbst.in/public/img12.jpg" alt="CBST Community" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="gallery-overlay"><p>CBST Community</p></div>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:1.5rem;">
+        <a href="http://cbst.in/pages/gallery.php" target="_blank" class="btn btn-outline"><i class="fas fa-images"></i> View Full Gallery on Official Site</a>
+    </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightboxBtn()">✕</button>
+    <button class="lightbox-nav lightbox-prev" onclick="lightboxNav(-1);event.stopPropagation()"><i class="fas fa-chevron-left"></i></button>
+    <img id="lightboxImg" src="" alt="Gallery Image">
+    <button class="lightbox-nav lightbox-next" onclick="lightboxNav(1);event.stopPropagation()"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<!-- ==================== STUDENT REVIEWS ==================== -->
+<section class="container">
+    <div class="reviews-section animate-fade-in-up">
+        <div class="section-header" style="margin-top:0;">
+            <span class="icon-badge">⭐ What Students Say</span>
+            <h2>Student Reviews</h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">RK</div>
+                    <div>
+                        <div class="review-name">Rajesh Kumar</div>
+                        <div class="review-date">BCA Graduate</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p style="font-size:0.87rem;color:var(--text-secondary);">"CBST gave me a strong foundation in computer science. The faculty is supportive and the practical sessions in the computer lab were genuinely helpful for my career."</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">PM</div>
+                    <div>
+                        <div class="review-name">Priya Mohapatra</div>
+                        <div class="review-date">B.Sc. Student</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p style="font-size:0.87rem;color:var(--text-secondary);">"The science labs are well-equipped and the teachers take real interest in each student. The college cultural events are memorable and the environment is very welcoming."</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">SS</div>
+                    <div>
+                        <div class="review-name">Subhashree Sahoo</div>
+                        <div class="review-date">BCA 3rd Year</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+                <p style="font-size:0.87rem;color:var(--text-secondary);">"Placement support from CBST helped me land an opportunity at TCS. The faculty members are experienced and always available after class to clear doubts."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SYLLABUS & RESOURCES ==================== -->
+<section class="container" id="syllabus-section">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">📖 Resources</span>
+        <h2>Syllabus & Learning Resources</h2>
+        <p>Download official syllabus and access recommended learning platforms for self-study</p>
+    </div>
+    <div class="syllabus-buttons animate-fade-in-up delay-100">
+        <a href="http://cbst.in/pages/syllabus.php" target="_blank" class="btn btn-primary"><i class="fas fa-download"></i> Official Syllabus (CBST)</a>
+        <a href="https://fmuniversity.in/" target="_blank" class="btn btn-outline"><i class="fas fa-university"></i> FM University Portal</a>
+    </div>
+    <div class="resource-cards animate-fade-in-up delay-200">
+        <a href="https://www.geeksforgeeks.org/" target="_blank" class="resource-card">
+            <i class="fas fa-code"></i>
+            <span>GeeksforGeeks</span>
+            <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.3rem;">CS Concepts & Practice</p>
+        </a>
+        <a href="https://www.w3schools.com/" target="_blank" class="resource-card">
+            <i class="fas fa-globe"></i>
+            <span>W3Schools</span>
+            <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.3rem;">Web Development</p>
+        </a>
+        <a href="https://www.codewithharry.com/" target="_blank" class="resource-card">
+            <i class="fas fa-laptop-code"></i>
+            <span>CodeWithHarry</span>
+            <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.3rem;">Programming Tutorials</p>
+        </a>
+        <a href="https://www.studocu.com/in/user/pawan-kumar-dey/59318093" target="_blank" class="resource-card">
+            <i class="fas fa-book-open"></i>
+            <span>Studocu Notes</span>
+            <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.3rem;">Handwritten Notes by Students</p>
+        </a>
+        <a href="https://swayam.gov.in/" target="_blank" class="resource-card">
+            <i class="fas fa-play-circle"></i>
+            <span>SWAYAM</span>
+            <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.3rem;">Free Online Courses (Govt.)</p>
+        </a>
+    </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="container" id="contact-section">
+    <div class="section-header animate-fade-in-up">
+        <span class="icon-badge">📞 Reach Us</span>
+        <h2>Contact CBST</h2>
+        <p>We'd love to hear from you. Visit us or reach out online.</p>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-info-card animate-fade-in-left">
+            <h3>Get In Touch</h3>
+            <div class="contact-row"><i class="fas fa-map-marker-alt"></i><div><strong>Address:</strong><br>Gopalgaon, Balasore, Odisha — 756001</div></div>
+            <div class="contact-row"><i class="fas fa-phone"></i><div><strong>Phone:</strong><br><a href="tel:+918895673760">+91 8895673760</a></div></div>
+            <div class="contact-row"><i class="fas fa-envelope"></i><div><strong>Email:</strong><br><a href="mailto:principal.cbst@gmail.com">principal.cbst@gmail.com</a></div></div>
+            <div class="contact-row"><i class="fas fa-globe"></i><div><strong>Website:</strong><br><a href="http://cbst.in" target="_blank">www.cbst.in</a></div></div>
+            <div class="contact-row"><i class="fas fa-clock"></i><div><strong>Office Hours:</strong><br>Mon–Sat, 10:00 AM – 5:00 PM</div></div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/CBST2016/" target="_blank" class="btn btn-sm" style="background:#1877F2;color:white;"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/cbstbalasore/" target="_blank" class="btn btn-sm" style="background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);color:white;"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="http://cbst.in" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Official Site</a>
+            </div>
+        </div>
+        <div class="map-wrapper animate-fade-in-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.135655949263!2d86.93309977526975!3d21.50240578026806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1cf5aee9138e33%3A0xe51614bdeb6d09bd!2sCollege%20Of%20Basic%20Science%20And%20Technology(CBST)%2CBalasore!5e0!3m2!1sen!2sin!4v1737273972290!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CBST Location on Google Maps"></iframe>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <h4>🏛️ CBST Balasore</h4>
+            <p style="font-size:0.83rem;line-height:1.7;">College of Basic Science &amp; Technology<br>Gopalgaon, Balasore, Odisha 756001</p>
+            <p style="margin-top:0.7rem;font-size:0.78rem;line-height:1.8;">
+                Affiliated to <strong style="color:#CBD5E1;">Fakir Mohan University</strong><br>
+                Approved by <strong style="color:#CBD5E1;">AICTE, New Delhi</strong><br>
+                Recognized by <strong style="color:#CBD5E1;">Govt. of Odisha</strong>
+            </p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/CBST2016/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/cbstbalasore/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="http://cbst.in" target="_blank" aria-label="Official Website"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+        <div>
+            <h4>🔗 Official Links</h4>
+            <ul>
+                <li><a href="https://www.ugc.gov.in/" target="_blank">UGC India</a></li>
+                <li><a href="https://dhe.odisha.gov.in/" target="_blank">DHE Odisha</a></li>
+                <li><a href="https://fmuniversity.in/" target="_blank">Fakir Mohan University</a></li>
+                <li><a href="https://aishe.gov.in/" target="_blank">AISHE Portal</a></li>
+                <li><a href="http://naac.gov.in/" target="_blank">NAAC</a></li>
+                <li><a href="https://swayam.gov.in/" target="_blank">SWAYAM</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>📚 Quick Links</h4>
+            <ul>
+                <li><a href="#notices">Notices &amp; Circulars</a></li>
+                <li><a href="#courses">Courses Offered</a></li>
+                <li><a href="#faculty">Faculty Directory</a></li>
+                <li><a href="#admission">Admission Info</a></li>
+                <li><a href="#gallery-section">Campus Gallery</a></li>
+                <li><a href="#contact-section">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>💡 Learning Resources</h4>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.codewithharry.com/" target="_blank">CodeWithHarry</a></li>
+                <li><a href="https://www.studocu.com/in/user/pawan-kumar-dey/59318093" target="_blank">Studocu Notes (CBST)</a></li>
+                <li><a href="http://cbst.in/pages/syllabus.php" target="_blank">Official Syllabus</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 College of Basic Science &amp; Technology (CBST), Balasore. All Rights Reserved.</p>
+        <p style="margin-top:0.3rem;font-size:0.7rem;">Made with ❤️ for CBST students | Educational purpose | All content sourced from cbst.in</p>
+    </div>
+</footer>
+
+<!-- ==================== KRISHNA BOT ==================== -->
+<div class="krishna-bot" id="krishnaBot">
+    <button class="bot-toggle" id="botToggle" aria-label="Chat with Krishna" title="Chat with Krishna — Press Ctrl+K">
+        <span>🧑‍🎓</span>
+        <span class="notification-dot"></span>
+    </button>
+    <div class="bot-panel" id="botPanel">
+        <div class="bot-header">
+            <div class="bot-avatar-img">🧑‍🎓</div>
+            <div>
+                <strong style="font-family:var(--font-display);">Krishna</strong>
+                <div class="bot-status"><span class="online-dot"></span> Online · Your Campus Guide</div>
+            </div>
+            <button id="botClose" style="margin-left:auto;background:none;border:none;color:white;cursor:pointer;font-size:1.1rem;" aria-label="Close chat">✕</button>
+        </div>
+        <div class="bot-messages" id="botMessages"></div>
+        <div class="bot-options" id="botOptions">
+            <button class="bot-option" data-action="notices">📢 Notices</button>
+            <button class="bot-option" data-action="admission">🎓 Admission</button>
+            <button class="bot-option" data-action="courses">📚 Courses</button>
+            <button class="bot-option" data-action="faculty">👩‍🏫 Faculty</button>
+            <button class="bot-option" data-action="contact">📞 Contact</button>
+            <button class="bot-option" data-action="syllabus">📖 Syllabus</button>
+        </div>
+        <div class="bot-input-area">
+            <input type="text" id="botInput" placeholder="Type your message…" aria-label="Chat message input">
+            <button id="botSend" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="authModal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="document.getElementById('authModal').classList.remove('active')">✕</button>
+        <h3>🔐 Student Portal</h3>
+        <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:1rem;">For the official student portal, please visit the CBST website directly.</p>
+        <a href="http://cbst.in" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-bottom:0.5rem;"><i class="fas fa-external-link-alt"></i> Go to Official CBST Site</a>
+        <button onclick="document.getElementById('authModal').classList.remove('active')" class="btn btn-outline" style="width:100%;justify-content:center;">Close</button>
+    </div>
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    // ============ HERO SWIPER ============
+    new Swiper('.heroSwiper', {
+        loop: true,
+        autoplay: { delay: 4500, disableOnInteraction: false },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        effect: 'fade',
+        fadeEffect: { crossFade: true }
+    });
+
+    // ============ THEME TOGGLE ============
+    const themeToggle = document.getElementById('themeToggle');
+    const themeLabel = document.querySelector('.theme-label');
+    const savedTheme = localStorage.getItem('cbst-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeBtn(savedTheme);
+    function updateThemeBtn(t) {
+        themeToggle.querySelector('i').className = t === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        if (themeLabel) themeLabel.textContent = t === 'dark' ? 'Light' : 'Dark';
+    }
+    themeToggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('cbst-theme', next);
+        updateThemeBtn(next);
+    });
+
+    // ============ MOBILE NAV ============
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileToggle.querySelector('i').className = navLinks.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+    });
+    // Mobile dropdown toggles
+    document.querySelectorAll('.nav-item span.nav-link').forEach(span => {
+        span.addEventListener('click', function() {
+            const item = this.closest('.nav-item');
+            item.classList.toggle('mob-open');
+        });
+    });
+
+    // ============ STICKY SCROLL PADDING ============
+    function updateScrollPadding() {
+        const g = document.getElementById('stickyGroup');
+        if (g) document.documentElement.style.scrollPaddingTop = g.offsetHeight + 8 + 'px';
+    }
+    updateScrollPadding();
+    window.addEventListener('resize', updateScrollPadding);
+
+    // ============ SMOOTH SCROLL ============
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                navLinks.classList.remove('active');
+                mobileToggle.querySelector('i').className = 'fas fa-bars';
+            }
+        });
+    });
+
+    // ============ GALLERY LIGHTBOX ============
+    const galleryImages = [
+        'http://cbst.in/public/img1.jpg',
+        'http://cbst.in/public/img2.jpg',
+        'http://cbst.in/public/img3.jpg',
+        'http://cbst.in/public/img4.jpg',
+        'http://cbst.in/public/img5.jpg',
+        'http://cbst.in/public/img6.jpg',
+        'http://cbst.in/public/img7.jpg',
+        'http://cbst.in/public/img8.jpg',
+        'http://cbst.in/public/img9.jpg',
+        'http://cbst.in/public/img10.jpg',
+        'http://cbst.in/public/img11.jpg',
+        'http://cbst.in/public/img12.jpg'
+    ];
+    let currentLightboxIdx = 0;
+    function openLightbox(idx) {
+        currentLightboxIdx = idx;
+        document.getElementById('lightboxImg').src = galleryImages[idx];
+        document.getElementById('lightbox').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLightboxBtn() {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    function closeLightbox(e) {
+        if (e.target === document.getElementById('lightbox')) closeLightboxBtn();
+    }
+    function lightboxNav(dir) {
+        currentLightboxIdx = (currentLightboxIdx + dir + galleryImages.length) % galleryImages.length;
+        document.getElementById('lightboxImg').src = galleryImages[currentLightboxIdx];
+    }
+    document.addEventListener('keydown', e => {
+        if (document.getElementById('lightbox').classList.contains('active')) {
+            if (e.key === 'ArrowLeft') lightboxNav(-1);
+            if (e.key === 'ArrowRight') lightboxNav(1);
+            if (e.key === 'Escape') closeLightboxBtn();
+        }
+    });
+
+    // ============ INTERSECTION OBSERVER ============
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('[class*="animate-"]').forEach(el => {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+    });
+
+    // ============ KRISHNA BOT ============
+    const botToggle = document.getElementById('botToggle');
+    const botPanel = document.getElementById('botPanel');
+    const botClose = document.getElementById('botClose');
+    const botMessages = document.getElementById('botMessages');
+    const botOptions = document.getElementById('botOptions');
+    const botInput = document.getElementById('botInput');
+    const botSend = document.getElementById('botSend');
+
+    let userName = '';
+    let userPrefix = '';
+    let conversationHistory = [];
+
+    botToggle.addEventListener('click', () => {
+        botPanel.classList.toggle('active');
+        if (botPanel.classList.contains('active') && botMessages.children.length === 0) {
+            setTimeout(() => {
+                addBotMessage("🙏 <strong>Namaste!</strong> I'm <strong>Krishna</strong>, your CBST campus guide!<br><br>Before I help you, may I know your good name? 😊");
+            }, 300);
+        }
+    });
+    botClose.addEventListener('click', () => botPanel.classList.remove('active'));
+
+    function addBotMessage(text, isUser = false) {
+        const div = document.createElement('div');
+        div.className = `bot-msg ${isUser ? 'user' : 'bot'}`;
+        div.innerHTML = text;
+        botMessages.appendChild(div);
+        botMessages.scrollTop = botMessages.scrollHeight;
+    }
+
+    function showTyping(callback, delay) {
+        const typing = document.createElement('div');
+        typing.className = 'bot-typing';
+        typing.innerHTML = '<span></span><span></span><span></span>';
+        botMessages.appendChild(typing);
+        botMessages.scrollTop = botMessages.scrollHeight;
+        setTimeout(() => { typing.remove(); callback(); }, delay);
+    }
+
+    function detectGender(name) {
+        const female = ['a', 'i', 'u', 'e'];
+        const femaleNames = ['priya','sita','puja','anita','sunita','kavita','mamta','geeta','reena','neha','sneha','pooja','laxmi','saraswati','meena','sushma','radha','nandita','smita','asha'];
+        const lname = name.toLowerCase();
+        if (femaleNames.some(fn => lname.includes(fn))) return 'Ms.';
+        if (female.includes(lname[lname.length-1])) return 'Ms.';
+        return 'Mr.';
+    }
+
+    function getTimeGreeting() {
+        const h = new Date().getHours();
+        if (h < 12) return 'Good Morning';
+        if (h < 17) return 'Good Afternoon';
+        return 'Good Evening';
+    }
+
+    function generateSmartResponse(msg) {
+        const lower = msg.toLowerCase();
+        const greet = `${userPrefix} ${userName}`;
+
+        if (lower.match(/(notice|circular|exam|schedule|time.?table|result)/)) {
+            return `📋 Here are the latest notices for you, ${greet}!<br><br>• <a href="http://cbst.in/notices/notice_68a44a0caa2f1.pdf" target="_blank" style="color:var(--primary);">2nd Sem Back Exam 2025</a> 🆕<br>• <a href="http://cbst.in/notices/notice_68a448937a567.pdf" target="_blank" style="color:var(--primary);">5th Sem Internal Exam 2025</a> 🆕<br>• <a href="http://cbst.in/pages/notices.php" target="_blank" style="color:var(--primary);">View All Notices →</a><br><br>You can also <a href="#notices" onclick="scrollToSection('notices');return false;" style="color:var(--primary);">scroll to Notices section</a> on this page.`;
+        }
+        if (lower.match(/(admission|apply|join|enroll|fee|seat)/)) {
+            return `🎓 Admissions for 2025-26 are OPEN, ${greet}!<br><br>📍 Programs: BCA & B.Sc.<br>📄 <a href="http://cbst.in/notices/notice_67fe5d76121dc.pdf" target="_blank" style="color:var(--primary);">Download Admission Notice</a><br>📋 <a href="http://cbst.in/pages/admission-procedure.html" target="_blank" style="color:var(--primary);">Admission Procedure</a><br><br>For details, <a href="#admission" onclick="scrollToSection('admission');return false;" style="color:var(--primary);">click here</a> or call us at <strong>+91 8895673760</strong>`;
+        }
+        if (lower.match(/(course|program|bca|b\.?sc|degree|subject)/)) {
+            return `📚 CBST offers 2 undergraduate programs, ${greet}:<br><br>💻 <strong>BCA</strong> — Bachelor of Computer Applications<br>&nbsp;&nbsp;(C, C++, Java, Python, Web Dev, AI/ML…)<br><br>🔬 <strong>B.Sc.</strong> — Bachelor of Science<br>&nbsp;&nbsp;(Physics, Chemistry, Zoology)<br><br>Both are affiliated to <strong>Fakir Mohan University</strong> and approved by <strong>AICTE</strong>.`;
+        }
+        if (lower.match(/(faculty|teacher|professor|staff|hod|principal)/)) {
+            return `👩‍🏫 CBST has 20+ dedicated faculty members, ${greet}!<br><br>🔬 Physics — 5 faculty<br>🧪 Chemistry — 4 faculty<br>🐾 Zoology — 4 faculty<br>💻 Computer Science — 7 faculty<br><br>The Principal is <strong>Prof. Somendra Kumar Pal</strong> (M.Sc., M.Phil in Physics, PGDCS).<br><br><a href="#faculty" onclick="scrollToSection('faculty');return false;" style="color:var(--primary);">View Full Faculty Directory →</a>`;
+        }
+        if (lower.match(/(contact|phone|email|address|location|where)/)) {
+            return `📞 Here's how to reach CBST, ${greet}:<br><br>📍 Gopalgaon, Balasore, Odisha — 756001<br>📱 <a href="tel:+918895673760" style="color:var(--primary);">+91 8895673760</a><br>📧 <a href="mailto:principal.cbst@gmail.com" style="color:var(--primary);">principal.cbst@gmail.com</a><br>🌐 <a href="http://cbst.in" target="_blank" style="color:var(--primary);">www.cbst.in</a><br><br>Office Hours: Mon–Sat, 10 AM – 5 PM`;
+        }
+        if (lower.match(/(syllabus|notes|study|material|resource|studocu)/)) {
+            return `📖 Study resources for you, ${greet}!<br><br>• <a href="http://cbst.in/pages/syllabus.php" target="_blank" style="color:var(--primary);">Official Syllabus (CBST)</a><br>• <a href="https://www.studocu.com/in/user/pawan-kumar-dey/59318093" target="_blank" style="color:var(--primary);">Handwritten Notes on Studocu</a><br>• <a href="https://www.geeksforgeeks.org/" target="_blank" style="color:var(--primary);">GeeksforGeeks (CS)</a><br>• <a href="https://swayam.gov.in/" target="_blank" style="color:var(--primary);">SWAYAM Free Courses</a>`;
+        }
+        if (lower.match(/(sport|cultural|event|fest|nss|yrc|activity)/)) {
+            return `🎉 Campus life at CBST is vibrant, ${greet}!<br><br>🏆 Annual Sports Meet<br>🎭 Cultural Fest — CBST Utsav<br>🌱 NSS &amp; YRC Activities<br>📚 Seminars &amp; Workshops<br>💻 Tech Fest — CodeWars<br>🧪 Science Exhibition<br><br>Students grow holistically here!`;
+        }
+        if (lower.match(/(placement|job|tcs|company|career)/)) {
+            return `💼 CBST has a dedicated Placement Cell, ${greet}!<br><br>Companies that have visited include <strong>TCS</strong> (Ignite &amp; Smart Hiring 2025).<br><br>📄 <a href="http://cbst.in/notices/notice_680cd563e41e8.pdf" target="_blank" style="color:var(--primary);">TCS Hiring Notice 2025</a>`;
+        }
+        const fallbacks = [
+            `Great question, ${greet}! 😊 I can help with — Notices | Admission | Courses | Faculty | Contact | Syllabus | Events. What would you like to know?`,
+            `Happy to help, ${greet}! 🎓 Ask me anything about CBST — or tap one of the quick options below.`
+        ];
+        return fallbacks[Math.floor(Math.random() * fallbacks.length)];
+    }
+
+    function scrollToSection(id) {
+        botPanel.classList.remove('active');
+        setTimeout(() => { const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 300);
+    }
+
+    function processBotInput(text) {
+        const t = text.trim();
+        if (!t) return;
+        addBotMessage(t, true);
+        conversationHistory.push({ role: 'user', content: t });
+
+        if (!userName) {
+            const firstName = t.split(' ')[0];
+            userName = firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase();
+            userPrefix = detectGender(userName);
+            showTyping(() => {
+                addBotMessage(`<strong>নমস্কার ${userPrefix} ${userName}! 🙏</strong><br><br>${getTimeGreeting()}! Welcome to CBST Balasore's campus guide.<br><br>How can I assist you today? You can ask about notices, admissions, courses, faculty, syllabus, or anything else! 😊`);
+            }, 1400);
+            return;
+        }
+        showTyping(() => {
+            const response = generateSmartResponse(t);
+            addBotMessage(response);
+            botOptions.style.display = 'flex';
+        }, 900 + Math.random() * 600);
+        botInput.value = '';
+    }
+
+    botSend.addEventListener('click', () => { processBotInput(botInput.value); botInput.value = ''; });
+    botInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') { processBotInput(botInput.value); botInput.value = ''; } });
+
+    document.querySelectorAll('.bot-option').forEach(opt => {
+        opt.addEventListener('click', function() {
+            if (!userName) { addBotMessage('May I know your name first please? 😊'); botInput.focus(); return; }
+            const queries = { notices: 'show latest notices', admission: 'tell me about admission', courses: 'what courses are offered', faculty: 'show faculty details', contact: 'contact information', syllabus: 'syllabus and study materials' };
+            processBotInput(queries[this.dataset.action] || this.dataset.action);
+        });
+    });
+
+    // ============ KEYBOARD SHORTCUTS ============
+    document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.key === 'k') { e.preventDefault(); botToggle.click(); }
+        if (e.key === 'Escape') {
+            botPanel.classList.remove('active');
+            document.getElementById('authModal').classList.remove('active');
+            if (document.getElementById('lightbox').classList.contains('active')) closeLightboxBtn();
+        }
+    });
+
+    console.log('✅ CBST Draft 4 — Loaded Successfully!');
+    console.log('🔧 Fixes: Sticky header, CSS ticker, real photos, correct faculty, admission section, lightbox gallery, local paths removed');
+    console.log('💡 Ctrl+K → Open Krishna Bot');
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "College of Basic Science & Technology (CBST)",
+    "alternateName": "CBST Balasore",
+    "url": "https://cbst.in",
+    "logo": "http://cbst.in/public/CBST.png",
+    "description": "A premier undergraduate college in Balasore, Odisha offering BCA and B.Sc. programs. Affiliated to Fakir Mohan University and approved by AICTE, New Delhi.",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gopalgaon",
+        "addressLocality": "Balasore",
+        "addressRegion": "Odisha",
+        "postalCode": "756001",
+        "addressCountry": "IN"
+    },
+    "telephone": "+918895673760",
+    "email": "principal.cbst@gmail.com",
+    "sameAs": ["https://www.facebook.com/CBST2016/", "https://www.instagram.com/cbstbalasore/"],
+    "foundingDate": "2016"
+}
+</script>
+</body>
+</html>
